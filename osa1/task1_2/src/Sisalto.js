@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Osa from './Osa';
+
 const Sisalto = (props) => {
   return (
     <div>
-      <p>{props.teksti1} {props.arvo1}</p>
-      <p>{props.teksti2} {props.arvo2}</p>
-      <p>{props.teksti3} {props.arvo3}</p>
+      <Osa nimi={props.teksti1} nro={props.arvo1}/>
+      <Osa nimi={props.teksti2} nro={props.arvo2}/>
+      <Osa nimi={props.teksti3} nro={props.arvo3}/>
     </div>
     );
 };
