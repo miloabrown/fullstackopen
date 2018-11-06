@@ -19,19 +19,14 @@ const App = () => {
     {
       nimi: 'Komponenttien tila',
       tehtavia: 14
-    },
-    {
-      yhteensa: 31
     }
-  ]
+]
 
   return (
     <div>
-      <Otsikko teksti={kurssi}/>
-      <Sisalto nimi1={osat[0].nimi} nro1={osat[0].tehtavia}
-      nimi2={osat[1].nimi} nro2={osat[1].tehtavia}
-       nimi3={osat[2].nimi} nro3={osat[2].tehtavia}/>
-      <Yhteensa text='Yhteensä' sum={osat[3].yhteensa} text2='tehtävää'/>
+      <Otsikko teksti={kurssi} />
+      <Sisalto o1={osat[0]} o2={osat[1]} o3={osat[2]} />
+      <Yhteensa text="Yhteensä" sum={osat[0].tehtavia+osat[1].tehtavia+osat[2].tehtavia} text2="tehtävää" />
 
     </div>
   )

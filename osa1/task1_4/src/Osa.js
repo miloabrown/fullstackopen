@@ -2,7 +2,7 @@ import React from 'react';
 
 const Osa = (props) => {
   return (
-      <p></p>
+      <p>{props.obj.nimi} {props.obj.tehtavia}</p>
     );
 };
 
