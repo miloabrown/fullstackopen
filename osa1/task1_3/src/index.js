@@ -22,11 +22,9 @@ const App = () => {
 
   return (
     <div>
-      <Otsikko teksti={kurssi}/>
-      <Sisalto nimi1={osa1.nimi} nro1={osa1.tehtavia}
-      nimi2={osa2.nimi} nro2={osa2.tehtavia}
-      nimi3={osa3.nimi} nro3={osa3.tehtavia}/>
-      <Yhteensa text="Yhteensä" sum={osa1.tehtavia+osa2.tehtavia+osa3.tehtavia} text2="tehtävää"/>
+      <Otsikko teksti={kurssi} />
+      <Sisalto o1={osa1} o2={osa2} o3={osa3} />
+      <Yhteensa text="Yhteensä" sum={osa1.tehtavia+osa2.tehtavia+osa3.tehtavia} text2="tehtävää" />
 
     </div>
   )

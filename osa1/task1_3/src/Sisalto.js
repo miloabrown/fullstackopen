@@ -5,10 +5,10 @@ import Osa from './Osa';
 const Sisalto = (props) => {
   return (
     <div>
-      <p>{props.nimi1} {props.nro1}</p>
-      <p>{props.nimi2} {props.nro2}</p>
-      <p>{props.nimi3} {props.nro3}</p>
-      </div>
+      <Osa obj={props.o1} />
+      <Osa obj={props.o2} />
+      <Osa obj={props.o3} />
+    </div>
     );
 };
 
